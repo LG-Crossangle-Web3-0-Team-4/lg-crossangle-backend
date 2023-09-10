@@ -22,6 +22,12 @@ module.exports = (sequelize) => {
 			type: DataTypes.CHAR(45),
 			unique: false,
 		},
+        status: {
+            allowNull: false,
+            type: DataTypes.INTEGER,
+            defaultValue: 0,
+            unique: false,
+        },
         data: {
 			allowNull: true,
 			type: DataTypes.BLOB,
